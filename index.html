@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>River Plate</title>
     <link rel="shortcut icon" href="./Multimedia/Logo 1.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="header-index">
         <!--Barra de Navegacion-->
         <div class="imagen-river">
             <a href="./index.html"><img src="./Multimedia/Logo 1.png" alt="Logo River"></a>
@@ -25,10 +26,10 @@
                 <li><a href="./pages/monumental.html">Monumental</a></li>
             </ul>
         </nav>
-        <div class="carrito">
+        <div class="carrito principal">
             <li><a href="./pages/ingrese.html"><img src="./Multimedia/Logo Leon.png" alt=""></a></li>
             <h2 class="h2-registrarse">
-                Registrarse
+                <strong>Registrarse</strong>
             </h2>
         </div>
 
@@ -38,76 +39,128 @@
         <h1 class="titulo1">
             Sitio Oficial del Club Atletico River Plate
         </h1>
-        <div class="buscate">
-            <h2>
-                Buscate en el Monumental
+        <div>
+            <h2 class="buscate-titulo">
+                <strong>Buscate en el MONUMENTAL</strong>
             </h2>
-            <img src="./Multimedia/Monumental fondo.jpg" alt="Fondo">
-            <img src="./Multimedia/Buscate 1.jpg" alt="Buscate1">
-            <img src="./Multimedia/Buscate 2.img" alt="Buscate2">
-            <img src="./Multimedia/Buscate 3.jpeg" alt="Buscate3">
-            <img src="./Multimedia/Buscate 4.jpeg" alt="Buscate4">
-            <img src="./Multimedia/Buscate5.jpg" alt="Buscate5">
+        </div>
+        <div class="buscate">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Multimedia/Buscate 1.jpg" class="d-block w-100" alt="Buscate 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Multimedia/Buscate 2.img" class="d-block w-100" alt="Buscate 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Multimedia/Buscate 3.jpeg" class="d-block w-100" alt="Buscate 3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Multimedia/Buscate 4.jpeg" class="d-block w-100" alt="Buscate 4">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
         <div class="video-pos">
             <h2 class="video">
-                Video Destacado de la Semana
+                Videos Destacados del mes
             </h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LZRK-f7cFcw?si=NgUiYrtAV9LqKHy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="video-yt" >
+                <iframe class="video1" src="https://www.youtube.com/embed/LZRK-f7cFcw?si=NgUiYrtAV9LqKHy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video1" src="https://www.youtube.com/embed/t-4fGdeg9og?si=0860znSMbCUz37fv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </div>
         <h2 class="noticias">
-            Ultimas Noticias
+            Últimas Noticias
         </h2>
         <!--Noticias-->
         <section class="secciones">
             <article class="noticias-tarjetas">
-                <img src="./Multimedia/Enzo Perez.jpg" width="300px" alt="Nota1">
+                <img src="./Multimedia/Enzo Perez.jpg" alt="Nota1">
                 <p>¿Se retira Enzo Perez a fin de año? </p>
             </article>
             <article class="noticias-tarjetas">
-                <img src="./Multimedia/Demichelis.img" width="300px" alt="Nota2">
+                <img src="./Multimedia/Demichelis.img" alt="Nota2">
                 <p>Cuestionado por el hincha ¿Que determinara Demichelis para afrontar lo que queda del año?</p>
             </article>
             <article class="noticias-tarjetas">
-                <img src="./Multimedia/proximo-partido.jpg" width="300px" alt="Nota3">
+                <img src="./Multimedia/proximo-partido.jpg" alt="Nota3">
                 <p>Enterate los proximos partidos del Millonario</p>
             </article>
             <article class="noticias-tarjetas">
-                <img src="./Multimedia/proximo-partido.jpg" width="300px" alt="Nota3">
+                <img src="./Multimedia/proximo-partido.jpg" alt="Nota3">
                 <p>Enterate los proximos partidos del Millonario</p>
             </article>
             <article class="noticias-tarjetas">
-                <img src="./Multimedia/proximo-partido.jpg" width="300px" alt="Nota3">
+                <img src="./Multimedia/proximo-partido.jpg" alt="Nota3">
                 <p>Enterate los proximos partidos del Millonario</p>
             </article>
             <article class="noticias-tarjetas">
-                <img src="./Multimedia/proximo-partido.jpg" width="300px" alt="Nota3">
+                <img src="./Multimedia/proximo-partido.jpg" alt="Nota3">
                 <p>Enterate los proximos partidos del Millonario</p>
             </article>
             <article class="noticias-tarjetas">
-                <img src="./Multimedia/proximo-partido.jpg" width="300px" alt="Nota3">
+                <img src="./Multimedia/proximo-partido.jpg" alt="Nota3">
                 <p>Enterate los proximos partidos del Millonario</p>
             </article>
             <article class="noticias-tarjetas">
-                <img src="./Multimedia/proximo-partido.jpg" width="300px" alt="Nota3">
+                <img src="./Multimedia/proximo-partido.jpg" alt="Nota3">
                 <p>Enterate los proximos partidos del Millonario</p>
             </article>
             <article class="noticias-tarjetas">
-                <img src="./Multimedia/proximo-partido.jpg" width="300px" alt="Nota3">
+                <img src="./Multimedia/proximo-partido.jpg" alt="Nota3">
+                <p>Enterate los proximos partidos del Millonario</p>
+            </article>
+            <article class="noticias-tarjetas">
+                <img src="./Multimedia/proximo-partido.jpg" alt="Nota3">
                 <p>Enterate los proximos partidos del Millonario</p>
             </article>
         </section>
+        <nav aria-label="paginacion">
+            <ul class="pagination justify-content-center">
+              <li class="page-item color-numero">
+                <a class="page-link" href="#" aria-label="Anterior">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="color-numero"><a class="page-link" href="#">1</a></li>
+              <li class="color-numero"><a class="page-link" href="#">2</a></li>
+              <li class="color-numero"><a class="page-link" href="#">3</a></li>
+              <li class="color-numero">
+                <a class="page-link" href="#" aria-label="Siguiente">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
         <!--Noticias-->
     </main class="fondo">
     <footer id="pie">
         <!--Pie de Página-->
         <section class="seccion-redes">
             <h2 class="redes">
-                Seguinos en nuestras redes
+                <strong>Seguinos en nuestras redes</strong>
             </h2>
-            <a href="https://www.instagram.com/riverplate/" target="_blank"><img src="./Multimedia/Instagram.png" width="40px" alt="Instagram Imagen"></a>
-            <a href="https://twitter.com/RiverPlate" target="_blank"><img src="./Multimedia/twitter-logo-png-logo-twitter-in-png-2500.png" width="45px" alt="Twitter Imagen"></a>
-            <a href="https://www.facebook.com/ElIntraRiver" target="_blank"><img src="./Multimedia/facebook.png" width="45px" alt="Facebook Imagen"></a>
+            <a href="https://www.instagram.com/riverplate/" target="_blank"><img src="./Multimedia/Instagram.png"  alt="Instagram Imagen"></a>
+            <a href="https://twitter.com/RiverPlate" target="_blank"><img src="./Multimedia/twitter-logo-png-logo-twitter-in-png-2500.png"  alt="Twitter Imagen"></a>
+            <a href="https://www.facebook.com/ElIntraRiver" target="_blank"><img src="./Multimedia/facebook.png"  alt="Facebook Imagen"></a>
         </section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1643.144260247347!2d-58.450744440846016!3d-34.54624957762363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20M%C3%A2s%20Monumental!5e0!3m2!1ses-419!2sar!4v1694353177386!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <!--Pie de Página-->
@@ -131,5 +184,6 @@
         </section>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
