@@ -1,0 +1,27 @@
+main{
+    font-family: $fuente-principal;
+    background-color: aliceblue;
+    .monumental-titulo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    .años{
+        text-align: center;
+    }
+    .monumental{
+        display: flex;
+        img{
+            width: 650px;
+            margin: 15px;
+            border-radius: 5px;
+        }
+        p{           
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            padding: 10px;
+            font-size: map-get($fuentes, tamanio-p );
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.main-tickets{
+    background-color: rgb(24, 24, 24);
+    font-family: $fuente-principal;
+    .titulo-tickets{
+        color: white;
+        margin: 0px 0 20px 0;
+        text-align: center;
+    }
+    .calendario{
+        img{
+            margin-left: 400px;
+            border-radius: 2px;
+        }
+    }
+    .boton-comprar-fixture{
+         margin-left: 800px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+        @include botones($color-principal, $color-secundario, 300px, 70px, 25px);
+   }
+
+}

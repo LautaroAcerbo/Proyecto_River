@@ -1,0 +1,9 @@
+@mixin botones($background-color, $color, $ancho, $alto, $letra){
+    background-color: $background-color;
+    color: $color;
+    width: $ancho;
+    height: $alto;
+    border-radius: 5px;
+    font-size: $letra;
+    box-shadow: 10px 8px 10px black;
+}

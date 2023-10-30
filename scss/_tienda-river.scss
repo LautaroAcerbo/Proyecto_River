@@ -1,0 +1,78 @@
+main{
+    font-family: $fuente-principal;
+    background-color: aliceblue;
+    .envio-gratis{
+        background-image:url(../Multimedia/wallpaper.jpg);
+        width: 100%;
+        p{
+            color: $color-secundario;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            text-shadow: 2px 2px black;
+        }
+    }
+    .descuento{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .titulo-tienda{
+        font-size: map-get($fuentes, tamanio-h1 );
+        margin: 0px 0 20px 0;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .compras{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        column-gap: 30px;
+        row-gap: 40px;
+        .tarjetas{
+            width: 300px;
+            height: 370px;
+            border: solid 1px black;
+            margin-bottom: 15px;
+            margin-left: 30px;
+            background-color: $color-principal;
+            color: $color-secundario;
+            border-radius: 2px;
+            box-shadow: 10px 8px 10px black;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        img{
+            width: 298px;
+        }
+        .texto-tarjeta{
+            text-align: center;
+        }
+        .boton-tienda{
+        margin-left: 93px;
+        @include botones($color-secundario, black, 100px, 35px, 13px);
+        }        
+    }
+    .formas{
+        margin: 20px 0 20px 0;
+        width: 100%;
+        height: 200px;
+        background-image: url(../Multimedia/fondo\ negro\ 2.avif);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            text-decoration: none;
+            color: $color-secundario;
+        }
+        img{
+            width: 100px;
+        }
+    }
+}

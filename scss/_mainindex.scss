@@ -1,0 +1,88 @@
+main{
+    font-family: $fuente-principal;
+    background-color: aliceblue;
+
+    .titulo1{
+        text-align: center;
+        font-size: map-get($fuentes, tamanio-h1);
+        margin: 0px 0 20px 0;
+        text-decoration: underline;
+    }
+    .buscate-titulo{
+        margin: map-get($fuentes, tamanio-h2 );
+        display: flex;
+        justify-content: center;
+    }
+    .buscate{
+        width: 100%;
+        .carousel-inner{
+            margin-left: 450px;
+            width: 1000px;
+        }
+        .carousel-control-prev{
+            margin-left: 400px;
+        }
+        .carousel-control-next{
+            margin-right: 400px;
+        }
+    }
+    .video-pos{
+        h2{
+            text-align: center;
+            background-color: black;
+            color: $color-secundario;
+            font-size: map-get($fuentes, tamanio-h2 );
+            margin: 10px 0 20px 0;
+        }
+        .video-yt{
+            display: flex;
+            justify-content: space-around;
+        }
+        .video1{
+            width: 560px;
+            height: 315px;
+        }
+    }
+    .noticias{
+        text-align: center;
+        background-color: black;
+        color: $color-secundario;
+        font-size: map-get($fuentes, tamanio-h2 ); 
+        margin: 10px 0 20px 0;
+    }
+    .secciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(58, 58, 58);
+        .noticias-tarjetas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 310px;
+            border: solid 5px rgb(12, 12, 12);
+            margin: 20px;
+            border-radius: 5px;
+            img{
+                width: 300px;
+                height: 250px; 
+            }
+            P{
+                margin-top: 10px;
+                text-decoration: underline;
+                color: $color-secundario;
+                font-size: map-get($fuentes , tamaño-h2 );
+            }
+        }
+    }
+    .color-numero{
+        margin-top: 10px;
+        a{
+            color: black;
+            background-color: $color-principal;
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+}

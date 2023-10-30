@@ -1,0 +1,507 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Header */
+header{
+    background-color: red;
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-areas: 
+        "imagen-river barra-navegacion carrito"
+    ;
+}
+
+.header-index{
+    height: 123px;
+}
+
+.imagen-river a img {
+    width: 100px;
+    margin-top: 19px;
+    margin-left:  20px;
+}
+
+.barra-navegacion ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: barra-navegacion;
+
+}
+
+.carrito{
+    grid-area: carrito;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+
+.carrito img{
+    width: 60px;
+    margin-right: 4px;
+}
+
+
+.barra-navegacion a{
+    color: white;
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
+    padding: 3px;
+}
+ul{
+    padding-left: 0rem;
+}
+
+.h2-registrarse{
+    font-size: 20px;
+}
+
+
+
+/* Main Index */
+main{
+    font-family: 'Roboto Slab', serif;
+    background-color: aliceblue;
+}
+.titulo1{
+    text-align: center;
+    font-size: 80px;
+    margin: 10px 0 20px 0;
+    text-decoration: underline;
+}
+
+.buscate{
+    width: 100%
+
+}
+
+.carousel-inner{
+margin-left: 450px;
+}
+
+.carousel-inner{
+    width: 1000px;
+}
+
+.buscate-titulo{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.carousel-control-prev{
+    margin-left: 400px;
+}
+.carousel-control-next{
+    margin-right: 400px;
+}
+
+.video{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin: 10px 0 20px 0;
+}
+
+.video-yt{
+    display: flex;
+    justify-content: space-around;
+}
+.video1{
+    width: 560px;
+    height: 315px;
+}
+
+.noticias{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 30px; 
+    margin: 10px 0 20px 0;   
+}
+
+.noticias-tarjetas{
+    width: 310px;
+    border: solid 5px black;
+    margin: 20px;
+}
+.noticias-tarjetas img{
+    width: 300px;
+}
+
+.secciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.color-numero a{
+    color: black;
+    background-color: red;
+}
+.color-numero:hover{
+    background-color: black;
+}
+
+
+/*Main Museo*/
+.titulo-museo{
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+.parrafo-museo{
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    font-size: 20px;
+}
+.museo-imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.museo-imagen img{
+    width: 100%;
+    height: 900px;
+    margin-bottom: 20px;
+}
+
+.boton-comprar{
+    background-color: red;
+    color: white;
+    width: 300px;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    box-shadow: 10px 8px 10px black;
+}
+
+/* Main Ingrese*/
+
+.main-ingrese{
+    background-color: white;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.form img{
+    position: absolute;
+    width: 100px;
+    margin-top: 20px;
+}
+.formulario-general{
+    width: 600px;
+    height: 600px;
+    background-color:red;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 10px 8px 10px black;
+}
+.inputs{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px;
+    border: 2px solid;
+}
+.formulario-general p a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    
+}
+.boton{
+    color: white;
+    width: 200px;
+    height: 50px;
+    background-color:black;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-top: 30px;
+}
+.boton:hover{
+    background-color: rgb(255, 255, 255);
+    color: red;
+}
+
+/* Main Tienda River*/
+.titulo-tienda{
+    margin: 10px 0 50px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.tarjetas{
+    width: 300px;
+    height: 370px;
+    border: solid 1px black;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 10px 8px 10px black;
+}
+.tarjetas img{
+    width: 298px;
+}
+.boton-tienda{
+    background-color: white;
+    margin: 5px 0 0 100px;
+    width: 100px;
+    font-size: 15px;
+}
+
+.compras{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 30px;
+    row-gap: 40px;
+    
+
+}
+.texto-tarjeta{
+    text-align: center;
+}
+
+/*Main Tickets*/
+.main-tickets{
+    background-color: rgb(24, 24, 24);
+}
+
+.titulo-tickets{
+    color: white;
+    margin: 0px 0 20px 0;
+    text-align: center;
+}
+.calendario{
+    margin-left: 400px;
+    border-radius: 2px;
+}
+.boton-comprar-fixture{
+    background-color: red;
+    color: white;
+    width: 300px;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    box-shadow: 10px 8px 10px black;
+    margin: 10px 0 5px 800px;
+}
+/*Main Monumental*/
+
+.monumental-titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.monumental1{
+    display: flex;
+}
+
+.monumental1 img{
+    width: 650px;
+    margin: 15px;
+    border-radius: 5px;
+}
+.monumental1 p{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.monumental2 img{
+    width: 650px;
+    border-radius: 5px;
+    margin: 15px;
+}
+.monumental2 {
+    display: flex;
+}
+.monumental2 p{
+    margin-top: 200px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.monumental3{
+    display: flex;
+
+}
+
+.monumental3 img{
+    width: 650px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.monumental3 p{
+
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.monumental4{
+    display: flex;
+}
+.monumental4 img{
+    width: 650px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.monumental4 p{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.monumental5 {
+    display: flex;
+}
+.monumental5 img{
+    width: 650px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.monumental5 p{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+/* Seccion Pie de Pagina */
+
+footer{
+    background-color: red;
+    font-family: 'Roboto Slab', serif;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+footer iframe{
+    width: 400px;
+    height: 250px;
+    margin-top: 25px;
+}
+footer a{
+    padding: 5px;
+}
+.seccion-redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-redes a img{
+    width:45px
+}
+.redes{
+    padding: 20px;
+    color: white;
+    
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.informacion p{
+    color: white;
+    margin-bottom: 0rem;
+}
+
+
+@media(min-width: 370px) and (max-width: 480px) {
+header{
+    display: flex;
+    flex-direction: column;
+}
+.imagen-river{
+    display: flex;
+    justify-content: center;
+}
+.carrito{
+    margin: 10px;
+}
+.barra-navegacion{
+    margin: 5px;
+}
+.titulo-tienda{
+    font-size: 20px;
+}
+.compras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjetas{
+    box-shadow: 10px 8px 10px black;
+}
+#pie{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.seccion-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.redes{
+    font-size: 20px;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+
+}
+.mapa iframe{
+    width: 300px;
+    border: solid 2px black;
+    box-shadow: 2px 2px 10px;
+    margin-bottom: 9px;
+    margin-top: 0;
+}
+.informacion{
+    font-size: 15px;
+}
+.parrafo-museo{
+    font-size: 15px ;
+}
+.museo-imagen img{
+    height: 300px;
+}
+.museo-imagen{
+    display: flex;
+    flex-direction: column;
+}
+.boton-comprar{
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+    box-shadow: 10px 8px 10px black;
+}
+}

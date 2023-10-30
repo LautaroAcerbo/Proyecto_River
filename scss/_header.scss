@@ -1,0 +1,55 @@
+header{
+    background-color: map-get($colores, color-primario);
+    font-family: $fuente-principal;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-areas: 
+        "imagen-river barra-navegacion carrito"
+    ;
+    .header-index{
+        height: 123px;
+    }
+    .imagen-river{
+        img{
+            width: 100px;
+            margin-top: 19px;
+            margin-left:  20px;
+        }
+    }
+    .barra-navegacion{
+        ul{
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            grid-area: barra-navegacion;
+            padding-left: 0rem;
+            margin-bottom: 0;
+            & :hover{
+                background-color: black;
+                border-radius: 5px;
+            }
+        }
+        a{
+            color: $color-secundario;
+            text-decoration: none;
+        }
+        li{
+            list-style-type: none;
+            padding: 3px;
+        }
+    }
+    .carrito{
+        grid-area: carrito;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        img{
+            width: 50px;
+            margin-right: 4px;
+        }
+    }
+
+}

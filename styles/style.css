@@ -1,509 +1,591 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+header {
+  background-color: red;
+  font-family: "Roboto Slab", serif;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 0.5fr;
+  grid-template-areas: "imagen-river barra-navegacion carrito";
 }
-/* Header */
-header{
-    background-color: red;
-    font-family: 'Roboto Slab', serif;
-    display: grid;
-    grid-template-columns: 0.5fr 3fr 0.5fr;
-    grid-template-areas: 
-        "imagen-river barra-navegacion carrito"
-    ;
+header .header-index {
+  height: 123px;
+}
+header .imagen-river img {
+  width: 100px;
+  margin-top: 19px;
+  margin-left: 20px;
+}
+header .barra-navegacion ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: barra-navegacion;
+  padding-left: 0rem;
+  margin-bottom: 0;
+}
+header .barra-navegacion ul :hover {
+  background-color: black;
+  border-radius: 5px;
+}
+header .barra-navegacion a {
+  color: white;
+  text-decoration: none;
+}
+header .barra-navegacion li {
+  list-style-type: none;
+  padding: 3px;
+}
+header .carrito {
+  grid-area: carrito;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+header .carrito img {
+  width: 50px;
+  margin-right: 4px;
 }
 
-.header-index{
-    height: 123px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.imagen-river a img {
-    width: 100px;
-    margin-top: 19px;
-    margin-left:  20px;
+main {
+  font-family: "Roboto Slab", serif;
+  background-color: aliceblue;
+}
+main .titulo1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0px 0 20px 0;
+  text-decoration: underline;
+}
+main .buscate-titulo {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+main .buscate {
+  width: 100%;
+}
+main .buscate .carousel-inner {
+  margin-left: 450px;
+  width: 1000px;
+}
+main .buscate .carousel-control-prev {
+  margin-left: 400px;
+}
+main .buscate .carousel-control-next {
+  margin-right: 400px;
+}
+main .video-pos h2 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  margin: 10px 0 20px 0;
+}
+main .video-pos .video-yt {
+  display: flex;
+  justify-content: space-around;
+}
+main .video-pos .video1 {
+  width: 560px;
+  height: 315px;
+}
+main .noticias {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  margin: 10px 0 20px 0;
+}
+main .secciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(58, 58, 58);
+}
+main .secciones .noticias-tarjetas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  border: solid 5px rgb(12, 12, 12);
+  margin: 20px;
+  border-radius: 5px;
+}
+main .secciones .noticias-tarjetas img {
+  width: 300px;
+  height: 250px;
+}
+main .secciones .noticias-tarjetas P {
+  margin-top: 10px;
+  text-decoration: underline;
+  color: white;
+}
+main .color-numero {
+  margin-top: 10px;
+}
+main .color-numero a {
+  color: black;
+  background-color: red;
+}
+main .color-numero a:hover {
+  background-color: black;
 }
 
-.barra-navegacion ul{
-    height: 100%;
+main {
+  font-family: "Roboto Slab", serif;
+  background-color: aliceblue;
+}
+main .titulo-museo {
+  font-size: 50px;
+  text-align: center;
+  margin: 0px 0 10px 0;
+}
+main .parrafo-museo {
+  margin: 10px 0 10px 0;
+  padding: 20px;
+  font-size: 30px;
+}
+main .museo-imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .museo-imagen img {
+  width: 100%;
+  height: 900px;
+  margin-bottom: 20px;
+}
+main .museo-imagen .boton-comprar-fixture {
+  margin-bottom: 10px;
+  background-color: red;
+  color: white;
+  width: 300px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 25px;
+  box-shadow: 10px 8px 10px black;
+}
+
+main {
+  font-family: "Roboto Slab", serif;
+  background-color: aliceblue;
+}
+main .envio-gratis {
+  background-image: url(../Multimedia/wallpaper.jpg);
+  width: 100%;
+}
+main .envio-gratis p {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+main .descuento {
+  width: 100%;
+  margin-bottom: 30px;
+}
+main .titulo-tienda {
+  font-size: 50px;
+  margin: 0px 0 20px 0;
+  text-align: center;
+  text-decoration: underline;
+}
+main .compras {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  column-gap: 30px;
+  row-gap: 40px;
+}
+main .compras .tarjetas {
+  width: 300px;
+  height: 370px;
+  border: solid 1px black;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 10px 8px 10px black;
+  transition: 0.5s;
+}
+main .compras .tarjetas:hover {
+  transform: scale(1.2);
+}
+main .compras img {
+  width: 298px;
+}
+main .compras .texto-tarjeta {
+  text-align: center;
+}
+main .compras .boton-tienda {
+  margin-left: 93px;
+  background-color: white;
+  color: black;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 13px;
+  box-shadow: 10px 8px 10px black;
+}
+main .formas {
+  margin: 20px 0 20px 0;
+  width: 100%;
+  height: 200px;
+  background-image: url(../Multimedia/fondo\ negro\ 2.avif);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .formas a {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+main .formas img {
+  width: 100px;
+}
+
+.main-tickets {
+  background-color: rgb(24, 24, 24);
+  font-family: "Roboto Slab", serif;
+}
+.main-tickets .titulo-tickets {
+  color: white;
+  margin: 0px 0 20px 0;
+  text-align: center;
+}
+.main-tickets .calendario img {
+  margin-left: 400px;
+  border-radius: 2px;
+}
+.main-tickets .boton-comprar-fixture {
+  margin-left: 800px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: red;
+  color: white;
+  width: 300px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 25px;
+  box-shadow: 10px 8px 10px black;
+}
+
+main {
+  font-family: "Roboto Slab", serif;
+  background-color: aliceblue;
+}
+main .monumental-titulo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+main .años {
+  text-align: center;
+}
+main .monumental {
+  display: flex;
+}
+main .monumental img {
+  width: 650px;
+  margin: 15px;
+  border-radius: 5px;
+}
+main .monumental p {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.main-ingrese {
+  background-color: white;
+}
+.main-ingrese .form {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.main-ingrese .form img {
+  position: absolute;
+  width: 100px;
+  margin-top: 20px;
+}
+.main-ingrese .form .formulario-general {
+  width: 600px;
+  height: 600px;
+  background-color: red;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 10px 8px 10px black;
+}
+.main-ingrese .form .inputs {
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px;
+  border: 2px solid;
+}
+.main-ingrese .form a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+.main-ingrese .form .boton {
+  color: white;
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  border-radius: 5px;
+  border: 2px solid white;
+  margin-top: 30px;
+}
+.main-ingrese .form .boton:hover {
+  background-color: rgb(255, 255, 255);
+  color: red;
+}
+
+footer {
+  background-color: red;
+  font-family: "Roboto Slab", serif;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+footer .seccion-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .seccion-redes .redes {
+  padding: 20px;
+  color: white;
+}
+footer .seccion-redes a {
+  padding: 5px;
+}
+footer .seccion-redes img {
+  width: 45px;
+}
+footer .iframe-footer {
+  width: 400px;
+  height: 250px;
+  margin-top: 25px;
+}
+footer .informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer .informacion p {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 0rem;
+}
+
+@media (min-width: 488px) and (max-width: 768px) {
+  header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    grid-area: barra-navegacion;
-
-}
-
-.carrito{
-    grid-area: carrito;
-    list-style-type: none;
+    flex-direction: column;
+  }
+  header .imagen-river {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 10px;
-}
-
-
-.carrito img{
-    width: 60px;
-    margin-right: 4px;
-}
-
-
-.barra-navegacion a{
-    color: white;
-    text-decoration: none;
-}
-ul li {
-    list-style-type: none;
-    padding: 3px;
-}
-ul{
-    padding-left: 0rem;
-}
-
-.h2-registrarse{
-    font-size: 20px;
-}
-
-
-
-/* Main Index */
-main{
-    font-family: 'Roboto Slab', serif;
-    background-color: aliceblue;
-}
-.titulo1{
-    text-align: center;
-    font-size: 80px;
-    margin: 10px 0 20px 0;
-    text-decoration: underline;
-}
-
-.buscate{
-    width: 100%
-
-}
-
-.carousel-inner{
-margin-left: 450px;
-}
-
-.carousel-inner{
-    width: 1000px;
-}
-
-.buscate-titulo{
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-}
-.carousel-control-prev{
-    margin-left: 400px;
-}
-.carousel-control-next{
-    margin-right: 400px;
-}
-
-.video{
-    text-align: center;
-    background-color: black;
-    color: white;
+  }
+  header .carrito {
+    margin: 10px;
+  }
+  header .barra-navegacion {
+    margin: 5px;
+  }
+  main .titulo1 {
     font-size: 30px;
-    margin: 10px 0 20px 0;
-}
-
-.video-yt{
-    display: flex;
-    justify-content: space-around;
-}
-.video1{
-    width: 560px;
-    height: 315px;
-}
-
-.noticias{
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-size: 30px; 
-    margin: 10px 0 20px 0;   
-}
-
-.noticias-tarjetas{
-    width: 310px;
-    border: solid 5px black;
-    margin: 20px;
-}
-.noticias-tarjetas img{
-    width: 300px;
-}
-
-.secciones{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.color-numero a{
-    color: black;
-    background-color: red;
-}
-.color-numero:hover{
-    background-color: black;
-}
-
-
-/*Main Museo*/
-.titulo-museo{
-    text-align: center;
-    margin: 15px 0 10px 0;
-}
-.parrafo-museo{
-    margin: 10px 0 10px 0;
-    padding: 20px;
-    font-size: 20px;
-}
-.museo-imagen{
+  }
+  main .buscate .carousel-inner {
+    margin-left: 0;
+    width: 420px;
+    margin-left: 30px;
+  }
+  main .buscate .carousel-control-prev {
+    margin-left: 70px;
+  }
+  main .buscate .carousel-control-next {
+    margin-right: 70px;
+  }
+  main .video-pos .video-yt {
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
     align-items: center;
-
-}
-.museo-imagen img{
-    width: 100%;
-    height: 900px;
-    margin-bottom: 20px;
-}
-
-.boton-comprar{
-    background-color: red;
-    color: white;
-    width: 300px;
-    height: 70px;
-    border-radius: 5px;
-    font-size: 20px;
-    margin-bottom: 20px;
-    box-shadow: 10px 8px 10px black;
-}
-
-/* Main Ingrese*/
-
-.main-ingrese{
-    background-color: white;
-}
-.form{
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-}
-.form img{
-    position: absolute;
-    width: 100px;
-    margin-top: 20px;
-}
-.formulario-general{
-    width: 600px;
-    height: 600px;
-    background-color:red;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 10px 8px 10px black;
-}
-.inputs{
+  }
+  main .video-pos .video1 {
     width: 400px;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 15px;
-    border: 2px solid;
-}
-.formulario-general p a{
-    color: white;
+    display: flex;
+  }
+  .main-tickets .titulo-tickets {
+    font-size: 25px;
+  }
+  .main-tickets .calendario img {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 2px;
+  }
+  .main-tickets .botom {
     display: flex;
     justify-content: center;
-    margin: 25px;
-    
-}
-.boton{
+  }
+  .main-tickets .botom .boton-comprar-fixture {
+    margin-left: 0px;
+    background-color: red;
     color: white;
     width: 200px;
-    height: 50px;
-    background-color:black;
+    height: 40px;
     border-radius: 5px;
-    border: 2px solid white;
-    margin-top: 30px;
-}
-.boton:hover{
-    background-color: rgb(255, 255, 255);
-    color: red;
-}
-
-/* Main Tienda River*/
-.titulo-tienda{
-    margin: 10px 0 50px 0;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.tarjetas{
-    width: 300px;
-    height: 370px;
-    border: solid 1px black;
-    margin-bottom: 15px;
-    margin-left: 30px;
-    background-color: red;
-    color: white;
-    border-radius: 2px;
-    box-shadow: 10px 8px 10px black;
-}
-.tarjetas img{
-    width: 298px;
-}
-.boton-tienda{
-    background-color: white;
-    margin: 5px 0 0 100px;
-    width: 100px;
     font-size: 15px;
-}
-
-.compras{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    column-gap: 30px;
-    row-gap: 40px;
-    
-
-}
-.texto-tarjeta{
-    text-align: center;
-}
-
-/*Main Tickets*/
-.main-tickets{
-    background-color: rgb(24, 24, 24);
-}
-
-.titulo-tickets{
-    color: white;
-    margin: 0px 0 20px 0;
-    text-align: center;
-}
-.calendario{
-    margin-left: 400px;
-    border-radius: 2px;
-}
-.boton-comprar-fixture{
-    background-color: red;
-    color: white;
-    width: 300px;
-    height: 70px;
-    border-radius: 5px;
-    font-size: 20px;
-    margin-bottom: 20px;
     box-shadow: 10px 8px 10px black;
-    margin: 10px 0 5px 800px;
-}
-/*Main Monumental*/
-
-.monumental-titulo{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-}
-.monumental1{
-    display: flex;
-}
-
-.monumental1 img{
-    width: 650px;
-    margin: 15px;
-    border-radius: 5px;
-}
-.monumental1 p{
-    margin-top: 50px;
+  }
+  main .titulo-museo {
+    font-size: 30px;
+    text-align: center;
+  }
+  main .parrafo-museo {
     padding: 10px;
-}
-
-.monumental2 img{
-    width: 650px;
-    border-radius: 5px;
-    margin: 15px;
-}
-.monumental2 {
-    display: flex;
-}
-.monumental2 p{
-    margin-top: 200px;
-    margin-left: 10px;
-    padding: 10px;
-}
-
-.monumental3{
-    display: flex;
-
-}
-
-.monumental3 img{
-    width: 650px;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-.monumental3 p{
-
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    padding: 10px;
-}
-
-.monumental4{
-    display: flex;
-}
-.monumental4 img{
-    width: 650px;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-.monumental4 p{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-.monumental5 {
-    display: flex;
-}
-.monumental5 img{
-    width: 650px;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-.monumental5 p{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-/* Seccion Pie de Pagina */
-
-footer{
-    background-color: red;
-    font-family: 'Roboto Slab', serif;
-    height: 300px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
-}
-
-footer iframe{
-    width: 400px;
-    height: 250px;
-    margin-top: 25px;
-}
-footer a{
-    padding: 5px;
-}
-.seccion-redes{
+    font-size: 15px;
+  }
+  main .museo-imagen {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  main .museo-imagen img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  main .museo-imagen .boton-comprar-fixture {
+    margin-bottom: 10px;
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 10px 8px 10px black;
+  }
+  main .monumental-titulo {
+    text-align: center;
+    font-size: 30px;
+  }
+  main .monumental {
+    display: flex;
+    flex-direction: column;
+  }
+  main .monumental img {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .main-ingrese .form .formulario-general {
+    width: 450px;
+  }
+  main .envio-gratis {
+    width: 100%;
+  }
+  main .descuento img {
+    width: 100%;
+  }
+  main .titulo-tienda {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  main .compras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin-bottom: 10px;
+  }
+  main .compras .tarjetas {
+    margin: 0;
+    transition: 0s;
+  }
+  main .compras .tarjetas:hover {
+    transform: none;
+  }
+  main .formas {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  main .formas img {
+    width: 40px;
+  }
+  main .formas a {
+    font-size: 15px;
+  }
+  footer {
+    background-color: red;
+    font-family: "Roboto Slab", serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .seccion-redes {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-.seccion-redes a img{
-    width:45px
-}
-.redes{
-    padding: 20px;
+    padding: 10px;
+  }
+  footer .seccion-redes .redes {
     color: white;
-    
-}
-
-.informacion{
+    font-size: 15px;
+  }
+  footer .seccion-redes img {
+    width: 30px;
+  }
+  footer .iframe-footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 0px;
+    padding: 10px;
+  }
+  footer .informacion {
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
     margin-bottom: 10px;
-}
-.informacion p{
+    margin-top: 10px;
+  }
+  footer .informacion p {
+    font-size: 15px;
     color: white;
     margin-bottom: 0rem;
+  }
 }
 
-
-@media(min-width: 498px) and (max-width: 768px) {
-header{
-    display: flex;
-    flex-direction: column;
-}
-.imagen-river{
-    display: flex;
-    justify-content: center;
-}
-.carrito{
-    margin: 10px;
-}
-.barra-navegacion{
-    margin: 5px;
-}
-.titulo-tienda{
-    font-size: 20px;
-}
-.compras{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.tarjetas{
-    box-shadow: 10px 8px 10px black;
-}
-#pie{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.seccion-redes{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.redes{
-    font-size: 20px;
-}
-.mapa{
-    display: flex;
-    justify-content: center;
-
-}
-.mapa iframe{
-    width: 300px;
-    border: solid 2px black;
-    box-shadow: 2px 2px 10px;
-    margin-bottom: 9px;
-    margin-top: 0;
-}
-.informacion{
-    font-size: 15px;
-}
-.parrafo-museo{
-    font-size: 15px ;
-}
-.museo-imagen img{
-    height: 300px;
-}
-.museo-imagen{
-    display: flex;
-    flex-direction: column;
-}
-.boton-comprar{
-    width: 250px;
-    height: 40px;
-    font-size: 18px;
-    box-shadow: 10px 8px 10px black;
-}
-}
-
-
+/*# sourceMappingURL=style.css.map */
