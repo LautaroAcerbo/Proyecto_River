@@ -527,7 +527,10 @@ footer .informacion p {
     padding: 10px;
   }
   .main-ingrese .form .formulario-general {
-    width: 450px;
+    width: 300px;
+  }
+  .main-ingrese .form .inputs {
+    width: 250px;
   }
   main .envio-gratis {
     width: 100%;
