@@ -13,8 +13,10 @@ main{
         }
     }
     .descuento{
-        width: 100%;
-        margin-bottom: 30px;
+        img{
+            width: 100%;
+            margin-bottom: 30px;
+        }
     }
     .titulo-tienda{
         font-size: map-get($fuentes, tamanio-h1 );

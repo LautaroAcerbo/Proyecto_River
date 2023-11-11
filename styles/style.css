@@ -149,9 +149,8 @@ main .titulo-museo {
   margin: 0px 0 10px 0;
 }
 main .parrafo-museo {
-  margin: 10px 0 10px 0;
-  padding: 20px;
-  font-size: 30px;
+  padding: 100px;
+  font-size: 20px;
 }
 main .museo-imagen {
   display: flex;
@@ -161,6 +160,7 @@ main .museo-imagen {
 main .museo-imagen img {
   width: 100%;
   height: 900px;
+  padding: 30px;
   margin-bottom: 20px;
 }
 main .museo-imagen .boton-comprar-fixture {
@@ -189,7 +189,7 @@ main .envio-gratis p {
   font-size: 20px;
   text-shadow: 2px 2px black;
 }
-main .descuento {
+main .descuento img {
   width: 100%;
   margin-bottom: 30px;
 }
@@ -406,6 +406,205 @@ footer .informacion p {
   margin-bottom: 0rem;
 }
 
+@media (min-width: 320px) and (max-width: 487px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .imagen-river {
+    display: flex;
+    justify-content: center;
+  }
+  header .carrito {
+    margin: 10px;
+  }
+  header .barra-navegacion {
+    margin: 5px;
+  }
+  header .barra-navegacion ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header .barra-navegacion li {
+    margin: 5px;
+  }
+  main .titulo1 {
+    font-size: 30px;
+  }
+  main .buscate-titulo {
+    font-size: 15px;
+  }
+  main .buscate .carousel-inner {
+    margin-left: 0;
+    width: 100%;
+    margin-left: 0px;
+  }
+  main .buscate .carousel-control-prev {
+    margin-left: 70px;
+  }
+  main .buscate .carousel-control-next {
+    margin-right: 70px;
+  }
+  main .video-pos h2 {
+    font-size: 15px;
+  }
+  main .video-pos .video-yt {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+  main .video-pos .video1 {
+    width: 315px;
+    height: 300px;
+    display: flex;
+  }
+  main .noticias {
+    font-size: 15px;
+  }
+  .main-tickets .titulo-tickets {
+    font-size: 25px;
+  }
+  .main-tickets .calendario img {
+    width: 100%;
+    height: 500px;
+    margin-left: 0;
+    border-radius: 2px;
+  }
+  .main-tickets .botom {
+    display: flex;
+    justify-content: center;
+  }
+  .main-tickets .botom .boton-comprar-fixture {
+    margin-left: 0px;
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 10px 8px 10px black;
+  }
+  main .titulo-museo {
+    font-size: 30px;
+    text-align: center;
+  }
+  main .parrafo-museo {
+    padding: 10px;
+    font-size: 15px;
+  }
+  main .museo-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .museo-imagen img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  main .museo-imagen .boton-comprar-fixture {
+    margin-bottom: 10px;
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 10px 8px 10px black;
+  }
+  main .monumental-titulo {
+    text-align: center;
+    font-size: 30px;
+  }
+  main .monumental {
+    display: flex;
+    flex-direction: column;
+  }
+  main .monumental img {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .main-ingrese .form .formulario-general {
+    width: 450px;
+  }
+  main .envio-gratis {
+    width: 100%;
+  }
+  main .descuento img {
+    width: 100%;
+  }
+  main .titulo-tienda {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  main .compras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin-bottom: 10px;
+  }
+  main .compras .tarjetas {
+    margin: 0;
+    transition: 0s;
+  }
+  main .compras .tarjetas:hover {
+    transform: none;
+  }
+  main .formas {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  main .formas img {
+    width: 40px;
+  }
+  main .formas a {
+    font-size: 15px;
+  }
+  footer {
+    background-color: red;
+    font-family: "Roboto Slab", serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .seccion-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  footer .seccion-redes .redes {
+    color: white;
+    font-size: 15px;
+  }
+  footer .seccion-redes img {
+    width: 30px;
+  }
+  footer .iframe-footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 0px;
+    padding: 10px;
+  }
+  footer .informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  footer .informacion p {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 0rem;
+  }
+}
 @media (min-width: 488px) and (max-width: 768px) {
   header {
     display: flex;
